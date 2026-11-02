@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Crisha Jane Amarado – Computer Science Student</title>
+    <meta
+      name="description"
+      content="Portfolio of Crisha Jane Amarado, a Computer Science student who loves databases and clear documentation."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Quicksand:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- small reusable icons -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="heart" viewBox="0 0 24 24">
+        <path
+          d="M12 21s-7.500-4.600-9.600-9.200C.9 8.400 3 4.500 6.600 4.500c2 0 3.500 1.100 5.400 3.200 1.900-2.100 3.400-3.200 5.400-3.200 3.600 0 5.700 3.900 4.200 7.300C19.500 16.400 12 21 12 21Z"
+        />
+      </symbol>
+      <symbol id="spark" viewBox="0 0 24 24">
+        <path
+          d="M12 1c.8 6.500 4.500 10.200 11 11-6.500.8-10.200 4.500-11 11-.8-6.500-4.500-10.200-11-11C7.500 11.200 11.200 7.500 12 1Z"
+        />
+      </symbol>
+      <symbol id="bow" viewBox="0 0 48 32">
+        <path d="M24 16C18 4 4 2 3 12c-1 12 13 16 21 4Z" />
+        <path d="M24 16c6-12 20-14 21-4 1 12-13 16-21 4Z" />
+        <path d="M22 18 13 30l6 1 5-9ZM26 18l9 12-6 1-5-9Z" />
+        <circle
+          cx="24"
+          cy="16"
+          r="4.600"
+          stroke="#fffdf6"
+          stroke-width="1.500"
+        />
+      </symbol>
+    </svg>
+
+    <nav class="nav" aria-label="Main">
+      <a class="mark" href="#home"
+        ><svg class="ico" width="26" height="18" aria-hidden="true">
+          <use href="#bow" /></svg
+        ><span>Crisha</span></a
+      >
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- HOME -->
+      <section id="home">
+        <div class="wrap hero">
+          <div class="hero-photo">
+            <div class="arch">
+              <!-- HER PHOTO: save it as images/crisha.jpg (or change the src) -->
+              <img
+                src="images/crisha.jpg"
+                alt="Portrait of Crisha Jane Amarado"
+                onerror="this.remove()"
+              />
+              <span class="ph-hint">Add her photo<br />images/crisha.jpg</span>
+            </div>
+            <svg class="ico deco bow-d" aria-hidden="true">
+              <use href="#bow" />
+            </svg>
+            <svg class="ico deco heart-d" aria-hidden="true" style="--d: 0.6s">
+              <use href="#heart" />
+            </svg>
+            <svg class="ico deco spark-d" aria-hidden="true" style="--d: 1.2s">
+              <use href="#spark" />
+            </svg>
+            <svg class="ico deco spark-e" aria-hidden="true" style="--d: 2s">
+              <use href="#spark" />
+            </svg>
+          </div>
+
+          <div class="hero-text">
+            <p class="hello">hello, nice to meet you</p>
+            <h1>Hi, I’m Crisha Jane</h1>
+            <p class="pill">Crisha Jane Amarado / Computer Science Student</p>
+            <!-- ONE SENTENCE INTRO -->
+            <p class="lead">
+              I'm bubbly, creative, and curious individual with passion for
+              learning, exploring ideas, and creating meaningful things.
+            </p>
+            <div class="actions">
+              <a class="btn" href="#projects">See my projects</a>
+              <a class="btn ghost" href="#about">About me</a>
+            </div>
+          </div>
+
+          <!-- STICKER: tap it for a little surprise.
+         To use a Pompompurin picture of your own, save it as images/pompompurin.png.
+         If that file is missing, the pudding drawing shows instead. -->
+          <button
+            class="sticker"
+            id="pud"
+            type="button"
+            aria-label="Pudding sticker. Tap for hearts."
+          >
+            <img
+              src="images/pompompurin.png"
+              alt="Pompompurin"
+              onerror="this.remove()"
+            />
+            <svg class="pudding" viewBox="0 0 120 132" aria-hidden="true">
+              <ellipse
+                cx="60"
+                cy="119"
+                rx="54"
+                ry="9"
+                fill="#fffdf6"
+                stroke="#f4b6c2"
+                stroke-width="3"
+              />
+              <path
+                d="M33 56C27 72 23 94 21 110c23 12 55 12 78 0-2-16-6-38-12-54Z"
+                fill="#fbd96a"
+              />
+              <path
+                d="M40 68c-3 12-5 25-6 38"
+                stroke="#fff3c2"
+                stroke-width="5"
+                stroke-linecap="round"
+                fill="none"
+              />
+              <path
+                d="M30 57c0-17 60-17 60 0 0 7-6 9-10 4-3 9-10 3-14 7-4-5-10 3-14-4-5 7-11 0-15 1-5 1-7-3-7-8Z"
+                fill="#b97a33"
+              />
+              <path
+                d="M45 50c7-4 15-4 21-2"
+                stroke="#e0a458"
+                stroke-width="3"
+                stroke-linecap="round"
+                fill="none"
+              />
+              <ellipse cx="60" cy="44" rx="16" ry="8" fill="#fffdf6" />
+              <ellipse cx="60" cy="37" rx="10" ry="6" fill="#fffdf6" />
+              <circle cx="60" cy="28" r="6.500" fill="#e8657f" />
+              <path
+                d="M60 22c0-6 4-10 9-11"
+                stroke="#4f6f58"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+              />
+              <use
+                href="#heart"
+                x="50"
+                y="80"
+                width="20"
+                height="20"
+                fill="#f4b6c2"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="wrap">
+          <h2>About me</h2>
+          <div class="about">
+            <aside class="facts" aria-label="Quick facts">
+              <!-- QUICK FACTS SECTION -->
+              <h3>Quick facts</h3>
+              <dl>
+                <dt>Name</dt>
+                <dd>Crisha Jane Amarado</dd>
+                <dt>Course</dt>
+                <dd>BS in Computer Science</dd>
+                <dt>School</dt>
+                <dd>Pambayang Dalubhasaan ng Marilao</dd>
+            </aside>
+            <div class="bio">
+              <!-- BIO -->
+              <p>
+                I’m Crisha Jane Amarado, a Computer Science student at Pambayang
+                Dalubhasaan ng Marilao. I enjoy exploring different aspects of
+                technology, from designing user-friendly interfaces to managing
+                data and creating organized documentation. I value creativity,
+                attention to detail, and continuous learning, and I’m always eager
+                to develop my skills and take on new challenges.
+              </p>
+              <p>
+                I work mostly on designing user-friendly interfaces and managing
+                databases. I focus on creating clean and organized designs,
+                structuring data, and building systems that are both functional
+                and easy to use. I enjoy combining creativity and technical skills
+                to bring ideas to life.
+              </p>
+              <p>
+                I’m still growing as a developer, and I love learning together
+                with my everyone. I’m looking for projects and internships
+                where I can keep building my skills with a kind, curious team.
+              </p>
+              <ul class="chips">
+                <li>UI/UX Design</li>
+                <li>MySQL</li>
+                <li>Documentation</li>
+                <li>Teamwork</li>
+                <li>Web Development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <div class="wrap">
+          <h2>Projects</h2>
+          <div class="cards">
+            <article class="card">
+              <div class="shot">
+                <!-- SCREENSHOT: save it as images/ark.png -->
+                <img
+                  src="images/ark.png"
+                  alt="Screenshot of ARK, the library management system"
+                  onerror="this.remove()"
+                />
+                <span class="ph-hint"
+                  >Add a screenshot<br />images/ark.png</span
+                >
+              </div>
+              <div class="meta">
+                <span class="role">My role: Database and Paperworks</span>
+                <h3>ARK: Archive &amp; Resource Keeper</h3>
+                <p>
+                  A team-built library management system with one login for
+                  students and the librarian, book search, loan requests and
+                  inventory tracking. I worked on the database design and the
+                  project documentation.
+                </p>
+                <ul class="tags">
+                  <li>C#</li>
+                  <li>Windows Forms</li>
+                  <li>MySQL</li>
+                </ul>
+                <a
+                  class="link"
+                  href="https://github.com/kennethAurelio/ARK-Library-Management-System"
+                  target="_blank"
+                  rel="noopener"
+                  >View on GitHub
+                  <svg class="ico" width="16" height="16" aria-hidden="true">
+                    <use href="#heart" /></svg
+                ></a>
+              </div>
+            </article>
+
+            <article class="card wip">
+              <div class="shot">
+                <span class="ph-hint">Something new is on its way</span>
+              </div>
+              <div class="meta">
+                <span class="role soft">In progress</span>
+                <h3>Next project</h3>
+                <p>[code in progress]</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="yr">2026</span> Crisha Jane Amarado</span>
+      <span>made with ♡ by Kenneth</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
