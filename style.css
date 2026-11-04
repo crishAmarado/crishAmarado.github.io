@@ -18,16 +18,19 @@
   --sans: "Quicksand", system-ui, -apple-system, "Segoe UI", sans-serif;
   --pad: clamp(1.25rem, 6vw, 5rem);
 }
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box
 }
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
-  background: var(--bg);
+  background: var(--bg)
 }
+
 body {
   margin: 0;
   color: var(--ink);
@@ -35,52 +38,58 @@ body {
   -webkit-font-smoothing: antialiased;
   /* soft green gingham so the page is never plain white */
   background:
-    linear-gradient(90deg, rgba(138, 166, 143, 0.11) 50%, transparent 0) 0
-      0/46px 46px,
-    linear-gradient(rgba(138, 166, 143, 0.11) 50%, transparent 0) 0 0/46px 46px,
+    linear-gradient(90deg, rgba(138, 166, 143, .11) 50%, transparent 0) 0 0/46px 46px,
+    linear-gradient(rgba(138, 166, 143, .11) 50%, transparent 0) 0 0/46px 46px,
     radial-gradient(55rem 38rem at 0% 0%, #e7efdf 0, transparent 65%),
     radial-gradient(50rem 40rem at 100% 55%, #e3ecda 0, transparent 65%),
     var(--bg);
 }
+
 a {
-  color: inherit;
+  color: inherit
 }
+
 :focus-visible {
   outline: 3px solid var(--pink-deep);
   outline-offset: 3px;
-  border-radius: 10px;
+  border-radius: 10px
 }
+
 .ico {
   fill: currentColor;
-  display: block;
+  display: block
 }
+
 .wrap {
   max-width: 70rem;
-  margin: 0 auto;
+  margin: 0 auto
 }
+
 section {
-  padding: 6.5rem var(--pad) 4rem;
+  padding: 6.5rem var(--pad) 4rem
 }
 
 h2 {
   margin: 0 0 2.2rem;
   text-align: center;
   font: italic 500 clamp(2.4rem, 5.5vw, 3.8rem)/1.1 var(--display);
-  color: var(--deep);
+  color: var(--deep)
 }
+
 h2::before,
 h2::after {
   content: "♡";
   color: var(--pink);
   font-style: normal;
-  font-size: 0.45em;
-  margin: 0 0.6em;
-  vertical-align: middle;
+  font-size: .45em;
+  margin: 0 .6em;
+  vertical-align: middle
 }
+
 h3 {
   margin: 0;
   font: italic 500 1.55rem/1.2 var(--display);
-  color: var(--deep);
+  color: var(--deep)
 }
 
 /* nav */
@@ -94,74 +103,82 @@ h3 {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 0.4rem 0.5rem 0.4rem 1.1rem;
-  background: rgba(255, 253, 246, 0.9);
+  padding: .4rem .5rem .4rem 1.1rem;
+  background: rgba(255, 253, 246, .9);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 2px solid var(--pink);
   border-radius: 99px;
-  box-shadow: 0 8px 20px -12px rgba(79, 111, 88, 0.6);
+  box-shadow: 0 8px 20px -12px rgba(79, 111, 88, .6)
 }
+
 .mark {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: .45rem;
   text-decoration: none;
   color: var(--pink-deep);
-  font: italic 500 1.25rem var(--display);
+  font: italic 500 1.25rem var(--display)
 }
+
 .mark .ico {
-  color: var(--pink);
+  color: var(--pink)
 }
+
 .nav ul {
   display: flex;
-  gap: 0.15rem;
+  gap: .15rem;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0
 }
+
 .nav ul a {
   display: block;
-  padding: 0.38rem 0.95rem;
+  padding: .38rem .95rem;
   border-radius: 99px;
   text-decoration: none;
   color: var(--mute);
   font-weight: 700;
-  font-size: 0.95rem;
-  transition:
-    background 0.25s,
-    color 0.25s;
+  font-size: .95rem;
+  transition: background .25s, color .25s
 }
+
 .nav ul a:hover {
   background: var(--pink-soft);
-  color: var(--pink-deep);
+  color: var(--pink-deep)
 }
+
 .nav ul a.on {
   background: var(--yellow);
-  color: var(--cocoa);
+  color: var(--cocoa)
 }
 
 /* home */
 #home {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: center
 }
+
 #home .wrap {
-  width: 100%;
+  width: 100%
 }
+
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
   gap: clamp(1.5rem, 5vw, 4.5rem);
-  align-items: center;
+  align-items: center
 }
+
 .hero-photo {
   position: relative;
   justify-self: center;
-  width: min(100%, 23rem);
+  width: min(100%, 23rem)
 }
+
 .arch {
   position: relative;
   aspect-ratio: 4/5;
@@ -172,104 +189,117 @@ h3 {
   border-radius: 999px 999px 30px 30px;
   background: var(--pink-soft);
   color: var(--pink-deep);
-  font-size: 0.9rem;
+  font-size: .9rem;
   border: 7px solid var(--paper);
-  box-shadow:
-    0 0 0 3px var(--pink),
-    0 22px 40px -22px rgba(79, 111, 88, 0.6);
+  box-shadow: 0 0 0 3px var(--pink), 0 22px 40px -22px rgba(79, 111, 88, .6)
 }
+
 .arch img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center top
 }
+
 .ph-hint {
-  padding: 0.8rem;
-  line-height: 1.4;
+  padding: .8rem;
+  line-height: 1.4
 }
+
 .deco {
   position: absolute;
   pointer-events: none;
   animation: bob 4.2s ease-in-out infinite;
-  animation-delay: var(--d, 0s);
+  animation-delay: var(--d, 0s)
 }
+
 .bow-d {
   width: 5.2rem;
   height: 3.5rem;
   color: var(--pink);
   top: -1.1rem;
-  left: -1.6rem;
+  left: -1.6rem
 }
+
 .heart-d {
   width: 2.2rem;
   height: 2.2rem;
   color: var(--pink);
   right: -1.1rem;
-  top: 28%;
+  top: 28%
 }
+
 .spark-d {
   width: 2rem;
   height: 2rem;
   color: var(--yellow);
   left: -1.4rem;
-  bottom: 22%;
+  bottom: 22%
 }
+
 .spark-e {
   width: 1.3rem;
   height: 1.3rem;
   color: var(--sage);
-  right: 0.2rem;
-  bottom: -0.9rem;
+  right: .2rem;
+  bottom: -.9rem
 }
+
 @keyframes bob {
+
   0%,
   100% {
-    transform: translateY(0);
+    transform: translateY(0)
   }
+
   50% {
-    transform: translateY(-8px);
+    transform: translateY(-8px)
   }
 }
 
 .hello {
-  margin: 0 0 0.5rem;
+  margin: 0 0 .5rem;
   color: var(--pink-deep);
-  font: italic 500 1.35rem var(--display);
+  font: italic 500 1.35rem var(--display)
 }
+
 h1 {
   margin: 0;
   font: italic 500 clamp(2.8rem, 6.4vw, 4.9rem)/1.05 var(--display);
   color: var(--deep);
-  letter-spacing: -0.01em;
+  letter-spacing: -.01em
 }
+
 .pill {
   display: inline-block;
   margin: 1.4rem 0 1rem;
-  padding: 0.5rem 1.2rem;
+  padding: .5rem 1.2rem;
   border-radius: 99px;
   background: var(--yellow-soft);
   border: 2px solid var(--yellow);
   color: var(--cocoa);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1rem
 }
+
 .lead {
   margin: 0 0 1.8rem;
   max-width: 34rem;
   font-size: 1.15rem;
-  color: var(--ink);
+  color: var(--ink)
 }
+
 .actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.9rem;
+  gap: .9rem
 }
+
 .btn {
   display: inline-block;
-  padding: 0.75rem 1.6rem;
+  padding: .75rem 1.6rem;
   border-radius: 99px;
   background: var(--yellow);
   color: var(--cocoa);
@@ -277,41 +307,46 @@ h1 {
   font-weight: 700;
   text-decoration: none;
   box-shadow: 0 4px 0 var(--pink-deep);
-  transition:
-    transform 0.15s,
-    box-shadow 0.15s;
+  transition: transform .15s, box-shadow .15s
 }
+
 .btn:hover {
   transform: translateY(2px);
-  box-shadow: 0 2px 0 var(--pink-deep);
+  box-shadow: 0 2px 0 var(--pink-deep)
 }
+
 .btn:active {
   transform: translateY(4px);
-  box-shadow: 0 0 0 var(--pink-deep);
+  box-shadow: 0 0 0 var(--pink-deep)
 }
+
 .btn.ghost {
   background: var(--paper);
   color: var(--deep);
   border-color: var(--deep);
-  box-shadow: 0 4px 0 var(--sage);
+  box-shadow: 0 4px 0 var(--sage)
 }
+
 .btn.ghost:hover {
-  box-shadow: 0 2px 0 var(--sage);
+  box-shadow: 0 2px 0 var(--sage)
 }
+
 .btn.gh {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: .5rem
 }
+
 .flink {
   color: inherit;
   font-weight: 700;
   text-decoration: none;
   border-bottom: 2px solid var(--pink);
-  transition: color 0.25s;
+  transition: color .25s
 }
+
 .flink:hover {
-  color: var(--pink-deep);
+  color: var(--pink-deep)
 }
 
 .sticker {
@@ -323,143 +358,170 @@ h1 {
   border: 0;
   background: none;
   cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent
 }
+
 .sticker img,
 .sticker svg {
   display: block;
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 8px 6px rgba(79, 111, 88, 0.28));
+  filter: drop-shadow(0 8px 6px rgba(79, 111, 88, .28))
 }
-.sticker img + svg {
-  display: none;
+
+.sticker img+svg {
+  display: none
 }
+
 .sticker:hover {
   transform: translateY(-4px);
-  transition: transform 0.25s;
+  transition: transform .25s
 }
+
 .sticker.wiggle {
-  animation: wiggle 0.6s ease;
+  animation: wiggle .6s ease
 }
+
 @keyframes wiggle {
   20% {
-    transform: rotate(-8deg) scale(1.06);
+    transform: rotate(-8deg) scale(1.06)
   }
+
   45% {
-    transform: rotate(7deg) scale(1.06);
+    transform: rotate(7deg) scale(1.06)
   }
+
   70% {
-    transform: rotate(-4deg);
+    transform: rotate(-4deg)
   }
 }
+
 .pop {
   position: fixed;
   z-index: 60;
   pointer-events: none;
   font-size: 1.5rem;
-  line-height: 1;
+  line-height: 1
 }
 
 .hero-photo {
-  animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation: rise .8s cubic-bezier(.2, .7, .2, 1) both
 }
-.hero-text > * {
-  animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+
+.hero-text>* {
+  animation: rise .8s cubic-bezier(.2, .7, .2, 1) both
 }
-.hero-text > :nth-child(2) {
-  animation-delay: 0.08s;
+
+.hero-text>:nth-child(2) {
+  animation-delay: .08s
 }
-.hero-text > :nth-child(3) {
-  animation-delay: 0.16s;
+
+.hero-text>:nth-child(3) {
+  animation-delay: .16s
 }
-.hero-text > :nth-child(4) {
-  animation-delay: 0.24s;
+
+.hero-text>:nth-child(4) {
+  animation-delay: .24s
 }
-.hero-text > :nth-child(5) {
-  animation-delay: 0.32s;
+
+.hero-text>:nth-child(5) {
+  animation-delay: .32s
 }
+
 @keyframes rise {
   from {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(16px)
   }
 }
 
 /* about */
 #about,
 #projects {
-  min-height: 70vh;
+  min-height: 70vh
 }
+
 .about {
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.5fr);
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.5fr);
   gap: 1.5rem;
-  align-items: start;
+  align-items: start
 }
+
 .facts {
   padding: 1.6rem;
   border-radius: 26px;
   background: var(--yellow-soft);
   border: 2px solid var(--yellow);
-  box-shadow: 0 6px 0 var(--yellow);
+  box-shadow: 0 6px 0 var(--yellow)
 }
+
 .facts h3 {
   margin-bottom: 1rem;
-  color: var(--cocoa);
+  color: var(--cocoa)
 }
+
 .facts dl {
-  margin: 0;
+  margin: 0
 }
+
 .facts dt {
-  font-size: 0.85rem;
+  font-size: .85rem;
   font-weight: 700;
   color: var(--cocoa);
-  opacity: 0.8;
+  opacity: .8
 }
+
 .facts dd {
-  margin: 0 0 0.9rem;
-  font-weight: 600;
+  margin: 0 0 .9rem;
+  font-weight: 600
 }
+
 .facts dd:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0
 }
+
 .bio {
   padding: 2rem;
   border-radius: 30px;
   background: var(--paper);
-  border: 2px dashed var(--pink);
+  border: 2px dashed var(--pink)
 }
+
 .bio p {
   margin: 0 0 1.1rem;
-  max-width: 60ch;
+  max-width: 60ch
 }
+
 .chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
+  gap: .55rem;
   list-style: none;
   margin: 1.5rem 0 0;
-  padding: 0;
+  padding: 0
 }
+
 .chips li {
-  padding: 0.3rem 0.95rem;
+  padding: .3rem .95rem;
   border-radius: 99px;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: .9rem;
   background: var(--pink-soft);
   color: var(--pink-deep);
-  border: 2px solid var(--pink);
+  border: 2px solid var(--pink)
 }
-.chips li:nth-child(3n + 2) {
+
+.chips li:nth-child(3n+2) {
   background: var(--yellow-soft);
   color: var(--cocoa);
-  border-color: var(--yellow);
+  border-color: var(--yellow)
 }
+
 .chips li:nth-child(3n) {
   background: var(--mint);
   color: var(--deep);
-  border-color: var(--sage);
+  border-color: var(--sage)
 }
 
 /* projects */
@@ -467,8 +529,9 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.6rem;
-  align-items: stretch;
+  align-items: stretch
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -477,14 +540,14 @@ h1 {
   background: var(--paper);
   border: 2px solid var(--pink);
   box-shadow: 0 6px 0 var(--pink);
-  transition:
-    transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1),
-    box-shadow 0.3s;
+  transition: transform .3s cubic-bezier(.2, .7, .2, 1), box-shadow .3s
 }
+
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 0 var(--pink);
+  box-shadow: 0 10px 0 var(--pink)
 }
+
 .shot {
   position: relative;
   aspect-ratio: 16/10;
@@ -493,155 +556,175 @@ h1 {
   overflow: hidden;
   background: var(--pink-soft);
   color: var(--pink-deep);
-  font-size: 0.9rem;
+  font-size: .9rem;
   text-align: center;
-  border-bottom: 2px solid var(--pink);
+  border-bottom: 2px solid var(--pink)
 }
+
 .shot img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top left;
+  object-position: top left
 }
+
 .meta {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: .85rem;
   padding: 1.5rem 1.6rem 1.7rem;
-  flex: 1;
+  flex: 1
 }
+
 .meta p {
   margin: 0;
-  color: var(--ink);
+  color: var(--ink)
 }
+
 .role {
   align-self: flex-start;
-  padding: 0.2rem 0.85rem;
+  padding: .2rem .85rem;
   border-radius: 99px;
   background: var(--yellow);
   color: var(--cocoa);
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: .85rem
 }
+
 .role.soft {
   background: var(--mint);
-  color: var(--deep);
+  color: var(--deep)
 }
+
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
+  gap: .45rem;
   list-style: none;
   margin: auto 0 0;
-  padding: 0;
+  padding: 0
 }
+
 .tags li {
-  padding: 0.15rem 0.75rem;
+  padding: .15rem .75rem;
   border-radius: 99px;
   background: var(--mint);
   border: 2px solid var(--sage);
   color: var(--deep);
   font-weight: 700;
-  font-size: 0.82rem;
+  font-size: .82rem
 }
+
 .link {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: .5rem;
   width: max-content;
   color: var(--pink-deep);
   font-weight: 700;
   text-decoration: none;
-  border-bottom: 2px solid var(--pink);
+  border-bottom: 2px solid var(--pink)
 }
+
 .link .ico {
   color: var(--pink);
-  transition: transform 0.25s;
+  transition: transform .25s
 }
+
 .link:hover .ico {
-  transform: scale(1.35);
+  transform: scale(1.35)
 }
+
 .card.wip {
   border-style: dashed;
-  box-shadow: none;
+  box-shadow: none
 }
+
 .card.wip:hover {
   transform: none;
-  box-shadow: none;
+  box-shadow: none
 }
+
 .card.wip .shot {
-  background: repeating-linear-gradient(
-    45deg,
-    var(--pink-soft) 0 14px,
-    #fdeef1 14px 28px
-  );
+  background: repeating-linear-gradient(45deg, var(--pink-soft) 0 14px, #fdeef1 14px 28px)
 }
 
 footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 0.5rem 1rem;
+  gap: .5rem 1rem;
   padding: 2rem var(--pad) 2.5rem;
   color: var(--mute);
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: .9rem;
+  font-weight: 600
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion:reduce) {
   html {
-    scroll-behavior: auto;
+    scroll-behavior: auto
   }
+
   .deco,
   .hero-photo,
-  .hero-text > *,
+  .hero-text>*,
   .sticker.wiggle {
-    animation: none;
+    animation: none
   }
+
   * {
-    transition-duration: 0.01ms !important;
+    transition-duration: .01ms !important
   }
 }
 
-@media (max-width: 820px) {
+@media (max-width:820px) {
   .hero {
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: center
   }
+
   .hero-photo {
-    width: min(78%, 19rem);
+    width: min(78%, 19rem)
   }
+
   .lead {
-    margin-inline: auto;
+    margin-inline: auto
   }
+
   .actions {
-    justify-content: center;
+    justify-content: center
   }
+
   .sticker {
     position: static;
     display: block;
-    margin: 0.5rem auto 0;
-    width: 6.5rem;
+    margin: .5rem auto 0;
+    width: 6.5rem
   }
+
   .about,
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr
   }
+
   #home {
     min-height: auto;
-    padding-top: 7.5rem;
+    padding-top: 7.5rem
   }
 }
-@media (max-width: 520px) {
+
+@media (max-width:520px) {
   .mark span {
-    display: none;
+    display: none
   }
+
   .nav {
-    padding-left: 0.8rem;
+    padding-left: .8rem
   }
+
   .nav ul a {
-    padding: 0.38rem 0.75rem;
+    padding: .38rem .75rem
   }
 }
